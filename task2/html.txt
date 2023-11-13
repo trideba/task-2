@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d84f4f;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #todo-container {
+            max-width: 400px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeeeee;
+        }
+
+        .task input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .task.completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        #task-input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        #add-task-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #3018e2;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #add-task-btn:hover {
+            background-color: #3798be;
+        }
+    </style>
+    <b><title>Your travel To-Do List</title></b>
+</head>
+<body>
+
+    <div id="todo-container">
+        <h2>Your travel To-Do List</h2>
+        <ul id="todo-list">
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">Add your travel location</span>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">Your select location</span>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">Your easy travel way</span>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">Your location verification</span>
+            </li>
+            <!-- Add more tasks as needed -->
+        </ul>
+        <input type="text" id="task-input" placeholder="Add a new location">
+        <button id="add-task-btn">Add location</button>
+    </div>
+
+</body>
+</html>
